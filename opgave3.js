@@ -6,8 +6,6 @@
 // BinaryTree Object
 // Storage mapping function
 function BinaryTree() {
-
-
     this.Nodes = [];
     this.level = 0;
     this.node = 0;
