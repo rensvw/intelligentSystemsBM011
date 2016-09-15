@@ -2,14 +2,18 @@
  * Created by rensvanw on 13-9-16.
  */
 
+// Comlexiteit = T(n) =
+
 // opgave 4 //
 
-let links = 0, rechts = 0, array = [1, 3, 5, 10];
+let links = 0, rechts = 0, array = [1, 3, 5, 10, 4, 7];
+
+let rij = array.sort(function (a, b) {
+    return b - a;
+});
 
 function weegschaal(array) {
-    let rij = array.sort(function (a, b) {
-        return b - a;
-    });
+    let rij = array;
     if (rij.length == 1) {
         links = rij[0];
         console.log("De weegschaal heeft links: ", links, "kg en rechts ", rechts, "kg");
@@ -33,4 +37,4 @@ function weegschaal(array) {
     }
 }
 
-weegschaal(array);
+weegschaal(rij);

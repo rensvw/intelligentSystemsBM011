@@ -81,6 +81,9 @@ tree.setNode(8, 2, 3);
 let value = tree.getNode();
 
 function traverse() {
+    if (tree.node) {
+
+    }
     let newValue = tree.getNode();
     if (value > newValue) {
         value = tree.getNode();
