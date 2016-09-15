@@ -8,7 +8,7 @@
 function BinaryTree() {
 
 
-    this.Nodes = new Array();
+    this.Nodes = [];
     this.level = 0;
     this.node = 0;
 
@@ -18,7 +18,7 @@ function BinaryTree() {
         } else {
             this.Nodes[this.btSMF(level, node)] = value;
         }
-    }
+    };
 
     this.getNode = function (level, node) {
         if (level === undefined) {
@@ -26,7 +26,7 @@ function BinaryTree() {
         } else {
             return this.Nodes[this.btSMF(level, node)];
         }
-    }
+    };
 
     this.root = function (value) {
         this.level = 0;
@@ -35,7 +35,7 @@ function BinaryTree() {
             this.Nodes[this.btSMF(this.level, this.node)] = value;
         }
         return this.Nodes[this.btSMF(this.level, this.node)];
-    }
+    };
 
     this.leftChild = function (value) {
         this.level++;
@@ -44,7 +44,7 @@ function BinaryTree() {
             this.Nodes[this.btSMF(this.level, this.node)] = value;
         }
         return this.Nodes[this.btSMF(this.level, this.node)];
-    }
+    };
 
     this.rightChild = function (value) {
         this.level++;
@@ -53,7 +53,7 @@ function BinaryTree() {
             this.Nodes[this.btSMF(this.level, this.node)] = value;
         }
         return this.Nodes[this.btSMF(this.level, this.node)];
-    }
+    };
 
     this.parent = function (value) {
         this.level--;
@@ -62,7 +62,7 @@ function BinaryTree() {
             this.Nodes[this.btSMF(this.level, this.node)] = value;
         }
         return this.Nodes[this.btSMF(this.level, this.node)];
-    }
+    };
 
     this.btSMF = function (level, node) {
         return node + (1 << level) - 1;
