@@ -5,6 +5,14 @@
 
 // BinaryTree Object
 // Storage mapping function
+
+/*
+ // Comlexiteit //
+ BinaryTree functie = n(n+2) = N^2 + 2n
+ T(n) = n^2 + 2n
+ O(t) = n^2
+ */
+
 function BinaryTree() {
     this.Nodes = [];
     this.level = 0;

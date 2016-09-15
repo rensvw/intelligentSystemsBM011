@@ -2,6 +2,13 @@
  * Created by rensvanw on 13-9-16.
  */
 
+/*
+ // Comlexiteit //
+ mirror functie = n
+ T(n) = n
+ O(n) = n
+ */
+
 function mirror(str) {
     let stringArray = str;
     let reversedString = "";

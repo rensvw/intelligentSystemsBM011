@@ -2,7 +2,14 @@
  * Created by rensvanw on 13-9-16.
  */
 
-// Comlexiteit = T(n) =
+/*
+ // Comlexiteit //
+ Quicksort alogritme = n^2
+ Weegschaal functie = n^2
+ T(n) = 2n^2
+ O(n) = n^2
+ */
+
 
 // opgave 4 //
 

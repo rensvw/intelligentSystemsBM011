@@ -1,5 +1,12 @@
 // Opgave 1
 
+/*
+ // Comlexiteit //
+ decreaseAndConquerSort functie = n^2
+ T(n) = n^2
+ O(n) = n^2
+ */
+
 function decreaseAndConquerSort(array) {
     let rij = array;
     if (rij.length <= 1) {
