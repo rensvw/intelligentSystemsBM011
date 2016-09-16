@@ -2,6 +2,14 @@
  * Created by rensvanw on 15-9-16.
  */
 
+/*
+ //complexiteit//
+ functie hanoi = n^2 + 1
+ T(n) = n^2 + 1
+ O(n) = n^2
+ */
+
+
 let start = [3, 2, 1];
 let tussen = [];
 let eind = [];
