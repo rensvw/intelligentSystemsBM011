@@ -2,34 +2,29 @@
  * Created by rensvanw on 15-9-16.
  */
 
-let A = [3, 2, 1];
+let A = [1];
 let B = [];
 let C = [];
 
 function hanoi(aantal, startstok, tussenstok, doelstok) {
-
-    if (startstok.length == 1) {
+    if (aantal == 1 && doelstok.length == 0 && startstok.length == 1 && tussenstok.length == 0) {
         doelstok.push(startstok.pop());
-        startstok.slice(0, 1);
-        console.log("Doelstok: ", doelStok);
+        console.log("Doelstok: ", C);
+        return;
     }
-    else {
-        if (aantal > 1) {
+    if (aantal > 0) {
 
-            hanoi(aantal - 1, startstok, tussenstok, doelstok);
+        hanoi(aantal - 1, startstok, doelstok, tussenstok);
 
-            doelstok.push(startstok.pop());
+        doelstok.push(startstok.pop());
 
-            console.log("start:", A, "tussen ", B, "eind: ", C);
+        console.log("start:", A, "tussen ", B, "eind: ", C);
 
-            hanoi(aantal - 1, tussenstok, doelstok, startstok);
-
-        }
+        hanoi(aantal - 1, tussenstok, startstok, doelstok);
 
     }
 
 
 }
-
 
 hanoi(A.length, A, B, C);
