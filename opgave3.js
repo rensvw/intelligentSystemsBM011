@@ -86,28 +86,31 @@ tree.setNode(1, 2, 2);
 tree.setNode(8, 2, 3);
 
 
+
 let value = tree.getNode();
 
 function traverse() {
-    if (tree.node) {
-
-    }
-    let newValue = tree.getNode();
-    if (value > newValue) {
+    if (tree.Nodes.length == 1) {
         value = tree.getNode();
+        console.log("There is only 1 node with the value: ", value);
     }
-    console.log("Smallest found value = ", value);
-    if (tree.leftChild() !== undefined) {
-        traverse();
+    else {
+        let newValue = tree.getNode();
+        if (value > newValue) {
+            value = tree.getNode();
+        }
+        console.log("Smallest found value = ", value);
+        if (tree.leftChild() !== undefined) {
+            traverse();
+        }
+        tree.parent();
+        if (tree.rightChild() !== undefined) {
+            traverse();
+        }
+        tree.parent();
     }
-    tree.parent();
-    if (tree.rightChild() !== undefined) {
-        traverse();
-    }
-    tree.parent();
 
 }
-
 
 
 tree.root();
