@@ -13,9 +13,11 @@
 
 // opgave 4 //
 
-let links = 0, rechts = 0, array = [1, 3, 5, 10, 4, 7];
+let links = 0;
+let rechts = 0;
+let array = [1, 3, 5, 10, 4, 7];
 
-let rij = array.sort(function (a, b) {
+let sortedArray = array.sort(function (a, b) {
     return b - a;
 });
 
@@ -44,4 +46,4 @@ function weegschaal(array) {
     }
 }
 
-weegschaal(rij);
+weegschaal(sortedArray);
