@@ -9,8 +9,7 @@
  O(n) = n^2
  */
 
-
-let start = [3, 2, 1];
+let start = [4, 3, 2, 1];
 let tussen = [];
 let eind = [];
 

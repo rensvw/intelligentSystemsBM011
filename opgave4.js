@@ -15,7 +15,7 @@
 
 let links = 0;
 let rechts = 0;
-let array = [1, 3, 5, 10, 4, 7];
+let array = [10, 10, 10, 6, 6, 6, 6, 6];
 
 let sortedArray = array.sort(function (a, b) {
     return b - a;
