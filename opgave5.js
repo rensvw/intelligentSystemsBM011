@@ -2,7 +2,7 @@
  * Created by rensvanw on 15-9-16.
  */
 
-let A = [1];
+let A = [3, 2, 1];
 let B = [];
 let C = [];
 
